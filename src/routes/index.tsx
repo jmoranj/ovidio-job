@@ -1,4 +1,4 @@
-import FormComponent from '@/components/FormComponent'
+import FormComponent from '@/components/form/FormComponent'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
