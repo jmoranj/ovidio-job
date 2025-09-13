@@ -1,4 +1,5 @@
-import FormComponent from '@/components/form/FormComponent'
+
+import ReactDraw from '@/components/ReactDraw'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
@@ -7,10 +8,8 @@ export const Route = createFileRoute('/')({
 
 function App() {
   return (
-    <div className="flex-1 flex items-center justify-center py-8">
-      <div className="w-full max-w-md">
-        <FormComponent />
-      </div>
+    <div>
+      <ReactDraw />
     </div>
   )
 }
