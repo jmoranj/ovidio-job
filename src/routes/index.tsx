@@ -1,5 +1,4 @@
-
-import ReactDraw from '@/components/ReactDraw'
+import PortifolioContainer from '@/components/portifolio/PortifolioContainer'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/')({
@@ -8,8 +7,6 @@ export const Route = createFileRoute('/')({
 
 function App() {
   return (
-    <div>
-      <ReactDraw />
-    </div>
+    <PortifolioContainer />
   )
 }

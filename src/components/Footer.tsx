@@ -2,7 +2,7 @@ import GitHubIcon from "./icons/GitHubIcon"
 
 export default function Footer() {
   return (
-    <footer className="flex mt-auto mx-40 justify-between border-t-1 border-white/20 py-10">
+    <footer className="flex mt-auto justify-between border-t-1 border-white/20 py-10">
       <div className="flex flex-col justify-start text-white">
         <a href="https://github.com/jmoranj" target="_blank" className="flex items-center gap-2">
           <GitHubIcon size={20} />
