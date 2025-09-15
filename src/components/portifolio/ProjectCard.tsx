@@ -12,11 +12,11 @@ interface ProjectType {
   projectType: "colaborative" | "jmoranj" | "eduard0vieira"
 }
 
-export default function ProjectCard( { projectType }: ProjectType ) {
+export default function ProjectCard({ projectType }: ProjectType) {
 
 
   const projects = useMemo(() => {
-    return projectsCard as Project[]  
+    return projectsCard as Project[]
   }, [])
 
   return (
@@ -24,11 +24,14 @@ export default function ProjectCard( { projectType }: ProjectType ) {
     <div className="flex gap-5">
       {projects.map((project) => project.type === projectType ? (
         <div key={project.name} className="flex flex-col flex-shrink-1 gap-2">
-          <img src={project.image} alt={project.name} className="rounded-lg" />
-          <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-white hover:text-cyan-500 transition-all duration-300 text-lg font-medium">
-            {project.name}
-            
+
+          <a href={project.link} className="overflow-hidden rounded-lg">
+            <img src={project.image} alt={project.name} className="w-full h-auto hover:scale-105 transition-all duration-300" />
           </a>
+
+          <h3 className="text-white transition-all duration-300 text-lg font-medium">
+            {project.name}
+          </h3>
         </div>
       ) : null)}
     </div>
