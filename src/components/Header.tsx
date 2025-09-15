@@ -1,8 +1,13 @@
 import ReactIcon from "./icons/ReactIcon";
+import { motion } from "framer-motion";
 
 export default function Header() {
   return (
-    <header className="flex items-center h-16 p-5 bg-white/5 backdrop-blur-md border border-white/20 shadow-xl shadow-black/10 my-5 rounded-xl">
+    <motion.header
+      initial={{ opacity: 0, y: 10 }}   // estado inicial (fora da tela e transparente)
+      animate={{ opacity: 1, y: 10 }}    // estado final (visível e na posição)
+      transition={{ duration: 1.0, ease: "easeOut" }} // tempo e suavização
+      className="flex items-center h-16 p-5 bg-white/5 backdrop-blur-md border border-white/20 shadow-xl shadow-black/10 my-5 rounded-xl">
       <div className="flex items-center justify-start w-1/3">
         <a href="/">
           <ReactIcon className="animate-pulse" />
@@ -21,6 +26,6 @@ export default function Header() {
           <a href="/login">Login</a>
         </div>
       </div>
-    </header>
+    </motion.header>
   )
 }
