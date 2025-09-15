@@ -9,9 +9,27 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #010101;
   margin: 0 160px;
+
+  @media (max-width: 768px) {
+    margin: 0 24px;
+  }
+
+  @media (max-width: 480px) {
+    margin: 0 24px;
+  }
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Esconder scrollbar mas manter funcionalidade */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari and Opera */
 }

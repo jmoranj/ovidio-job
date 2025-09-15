@@ -1,43 +1,43 @@
 [
   {
     "name": "Candyland Web",
-    "image": "https://via.placeholder.com/150",
+    "image": "https://picsum.photos/300/300",
     "link": "https://github.com/jmoranj/candyland-web",
     "type": "colaborative"
   },
   {
     "name": "Candyland Api",
-    "image": "https://via.placeholder.com/150",
+    "image": "https://picsum.photos/300/300",
     "link": "https://github.com/jmoranj/candyland-api",
     "type": "colaborative"
   },
   {
     "name": "Furia",
-    "image": "https://via.placeholder.com/150",
+    "image": "https://picsum.photos/300/300",
     "link": "https://github.com/jmoranj/furia-web",
     "type": "eduard0vieira"
   },
   {
     "name": "Furia Api",
-    "image": "https://via.placeholder.com/150",
+    "image": "https://picsum.photos/300/300",
     "link": "https://github.com/jmoranj/furia-api",
     "type": "eduard0vieira"
   },
   {
     "name": "Ovidio Job Web",
-    "image": "https://via.placeholder.com/150",
+    "image": "https://picsum.photos/300/300",
     "link": "https://github.com/jmoranj/ovidio-job",
     "type": "colaborative"
   },
   {
     "name": "Flea tribute",
-    "image": "https://via.placeholder.com/150",
+    "image": "https://picsum.photos/300/300",
     "link": "https://github.com/jmoranj/flea-tribute",
     "type": "jmoranj"
   }, 
   {
     "name": "Mercado Franquias",
-    "image": "https://via.placeholder.com/150",
+    "image": "https://picsum.photos/300/300",
     "link": "https://franchise.mindconsulting.com.br",
     "type": "jmoranj"
   }
