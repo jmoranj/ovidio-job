@@ -1,5 +1,6 @@
 import PortifolioContainer from '@/components/portifolio/PortifolioContainer'
 import { createFileRoute } from '@tanstack/react-router'
+import Title from '@/components/Title'
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -7,6 +8,9 @@ export const Route = createFileRoute('/')({
 
 function App() {
   return (
-    <PortifolioContainer />
+    <div>
+      <Title />
+      <PortifolioContainer />
+    </div>
   )
 }
