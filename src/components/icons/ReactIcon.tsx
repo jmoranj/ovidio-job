@@ -3,7 +3,7 @@ interface ReactIconProps {
   className?: string
 }
 
-export default function ReactIcon({ size = 24, className = "" }: ReactIconProps) {
+export default function ReactIcon({ size = 32, className = "" }: ReactIconProps) {
   return (
     <svg
       width={size}

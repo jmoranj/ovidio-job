@@ -3,12 +3,12 @@ import SliderContainerProjectCard from "./SliderContainerProjectCard";
 
 export default function PortifolioContainer() {
   return (
-    <div className="flex flex-col w-full my-5 text-white/30 font-bold text-3xl gap-20">
+    <div className="flex flex-col w-full my-5 text-white/30 font-bold text-3xl gap-10">
 
       <section id="colaborative">
-        <h2 className="w-fit transition-all duration-300 bg-gradient-to-r from-cyan-500 to-pink-500 bg-clip-text animate-bounce">
+        <h2 className="transition-all duration-300 text-white">
           Portifolio Colaborativos
-        </h2>
+        </h2> 
 
         <SliderContainerProjectCard>
           <ProjectCard projectType="colaborative" />
@@ -16,7 +16,7 @@ export default function PortifolioContainer() {
       </section>
 
       <section id="jmoranj">
-        <h2 className=" w-fit transition-all duration-300 bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text animate-bounce">
+        <h2 className="transition-all duration-300 text-white">
           Portifólio jmoranj
         </h2>
 
@@ -26,7 +26,7 @@ export default function PortifolioContainer() {
       </section>
 
       <section id="eduard0vieira">
-        <h2 className="w-fit transition-all duration-300 bg-gradient-to-r from-purple-600 to-blue-700 bg-clip-text animate-bounce">
+        <h2 className="transition-all duration-300 text-white">
           Portifólio eduard0vieira
         </h2>
 
