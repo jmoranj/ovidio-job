@@ -28,11 +28,23 @@
     "image": "https://picsum.photos/300/300",
     "link": "https://github.com/jmoranj/flea-tribute",
     "type": "jmoranj"
-  }, 
+  },
   {
     "name": "Mercado Franquias",
     "image": "https://picsum.photos/300/300",
     "link": "https://franchise.mindconsulting.com.br",
     "type": "jmoranj"
+  },
+  {
+    "name": "Mind Group Front",
+    "image": "https://picsum.photos/300/300",
+    "link": "https://github.com/eduard0vieira/mind-front",
+    "type": "eduard0vieira"
+  },
+  {
+    "name": "Mind Group Back",
+    "image": "https://picsum.photos/300/300",
+    "link": "https://github.com/eduard0vieira/mind-back",
+    "type": "eduard0vieira"
   }
 ]
