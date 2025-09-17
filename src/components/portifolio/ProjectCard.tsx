@@ -1,6 +1,9 @@
-import { useMemo } from "react"
 import projectsCard from "../assets/json/ProjectsCard.json"
 import GitHubIcon from "../icons/GitHubIcon"
+
+interface ProjectType {
+  projectType: "colaborative" | "jmoranj" | "eduard0vieira"
+}
 
 type Project = {
   name: string
@@ -9,16 +12,9 @@ type Project = {
   type: string
 }
 
-interface ProjectType {
-  projectType: "colaborative" | "jmoranj" | "eduard0vieira"
-}
-
 export default function ProjectCard({ projectType }: ProjectType) {
 
-
-  const projects = useMemo(() => {
-    return projectsCard as Project[]
-  }, [])
+  const projects = projectsCard as Project[]
 
   return (
 
