@@ -1,5 +1,6 @@
 import { useMemo } from "react"
 import projectsCard from "../assets/json/ProjectsCard.json"
+import GitHubIcon from "../icons/GitHubIcon"
 
 type Project = {
   name: string
@@ -25,8 +26,9 @@ export default function ProjectCard({ projectType }: ProjectType) {
       {projects.map((project) => project.type === projectType ? (
         <div key={project.name} className="flex flex-col flex-shrink-1 gap-2">
 
-          <a href={project.link} className="overflow-hidden rounded-lg">
-            <img src={project.image} alt={project.name} className="w-full h-auto hover:scale-105 transition-all duration-300" />
+          <a href={project.link} target="_blank" className="overflow-hidden rounded-lg bg-white">
+            {/* <img src={project.image} alt={project.name} className="w-full h-auto hover:scale-105 transition-all duration-300" /> */}
+            <GitHubIcon size={200} className="text-black" />
           </a>
 
           <h3 className="text-white transition-all duration-300 text-lg font-medium">

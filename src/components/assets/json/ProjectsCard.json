@@ -7,20 +7,14 @@
   },
   {
     "name": "Candyland Api",
-    "image": "https://picsum.photos/300/300",
+    "image": "components/assets/githubicon.png",
     "link": "https://github.com/jmoranj/candyland-api",
     "type": "colaborative"
   },
   {
     "name": "Furia",
     "image": "https://picsum.photos/300/300",
-    "link": "https://github.com/jmoranj/furia-web",
-    "type": "eduard0vieira"
-  },
-  {
-    "name": "Furia Api",
-    "image": "https://picsum.photos/300/300",
-    "link": "https://github.com/jmoranj/furia-api",
+    "link": "https://github.com/eduard0vieira/furia-howl",
     "type": "eduard0vieira"
   },
   {

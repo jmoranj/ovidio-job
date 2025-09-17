@@ -1,7 +1,7 @@
 import PortifolioContainer from '@/components/portifolio/PortifolioContainer'
 import { createFileRoute } from '@tanstack/react-router'
-import Title from '@/components/Title'
 import { motion } from "framer-motion";
+import TitleContainer from '@/components/title/TitleContainer';
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -10,7 +10,7 @@ export const Route = createFileRoute('/')({
 function App() {
   return (
     <div>
-      <Title />
+      <TitleContainer/>
       <motion.div
         initial={{ opacity: 0, y: 0 }}
         animate={{ opacity: 1, y: 0 }}
