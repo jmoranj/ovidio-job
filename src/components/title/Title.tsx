@@ -14,7 +14,7 @@ export default function Title() {
       animate={{ x: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
       className="flex font-bold text-9xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-50 to-cyan-500">
-        Olá, <br /> Bem vindo!
+        Olá, <br /> Bem vindo
       </motion.h1>
 
       <p className='text-white flex flex-col text md:text-5xl text-4xl'>

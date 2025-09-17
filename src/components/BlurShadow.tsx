@@ -16,7 +16,7 @@ export default function BlurShadow() {
         ease: "easeInOut"
       }}
       className="fixed bottom-0 right-0 w-[400px] h-[400px] 
-                bg-cyan-400 blur-[200px] rounded-full pointer-events-none"
+                bg-cyan-400 blur-[200px] rounded-full pointer-events-none z-10"
     />
   )
 }

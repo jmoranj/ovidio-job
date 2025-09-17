@@ -1,7 +1,7 @@
 export default function SliderContainerProjectCard( { children }: { children: React.ReactNode }) {
   return (
     <div className="w-full h-full my-5
-    bg-white/5 backdrop-blur-md border border-gray-700 shadow-xl shadow-black/10 rounded-xl p-4">
+    bg-white/5 backdrop-blur-md border border-gray-700 shadow-xl shadow-black/10 rounded-xl p-4 z-20">
       <div className="flex gap-5 overflow-x-auto overflow-y-hidden scrollbar-hide">
         {children}
       </div>

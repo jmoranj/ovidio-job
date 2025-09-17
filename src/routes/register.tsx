@@ -1,6 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router'
 import RegisterForm from '@/components/form/RegisterForm'
 import { motion } from 'framer-motion'
+import BlurShadow from '@/components/BlurShadow'
 
 export const Route = createFileRoute('/register')({
   component: RouteComponent,
@@ -14,6 +15,7 @@ function RouteComponent() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 5, ease: "easeOut" }} className="w-full max-w-md">
         <RegisterForm />
+        <BlurShadow />
       </motion.div>
     </div>
   )
