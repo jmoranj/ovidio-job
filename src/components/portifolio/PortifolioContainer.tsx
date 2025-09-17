@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 export default function PortifolioContainer() {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 50 }}   // começa invisível e deslocado 50px para baixo
-      animate={{ opacity: 1, y: 0 }}    // anima para posição normal e visível
-      transition={{ duration: 3.0, ease: "easeOut" }} // duração suave
+      initial={{ opacity: 0, y: 50 }}   
+      animate={{ opacity: 1, y: 0 }}    
+      transition={{ duration: 3.0, ease: "easeOut" }}
       className="flex flex-col w-full my-40 text-white/30 font-bold text-3xl gap-10"
     >
       <motion.section id="colaborative">
