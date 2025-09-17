@@ -2,6 +2,7 @@
 import LoginForm from '@/components/form/LoginForm'
 import { createFileRoute } from '@tanstack/react-router'
 import { motion } from "framer-motion";
+import BlurShadow from '@/components/BlurShadow';
 
 
 export const Route = createFileRoute('/login')({
@@ -17,6 +18,7 @@ function Login() {
       transition={{ duration: 5, ease: "easeOut" }} 
       className="w-full max-w-md">
         <LoginForm />
+        <BlurShadow />
       </motion.div>
     </div>
   )
