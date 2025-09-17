@@ -1,21 +1,26 @@
 import ProjectCard from "./ProjectCard";
 import SliderContainerProjectCard from "./SliderContainerProjectCard";
+import { motion } from "framer-motion";
 
 export default function PortifolioContainer() {
   return (
-    <div className="flex flex-col w-full my-40 text-white/30 font-bold text-3xl gap-10">
-
-      <section id="colaborative">
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}   // começa invisível e deslocado 50px para baixo
+      animate={{ opacity: 1, y: 0 }}    // anima para posição normal e visível
+      transition={{ duration: 3.0, ease: "easeOut" }} // duração suave
+      className="flex flex-col w-full my-40 text-white/30 font-bold text-3xl gap-10"
+    >
+      <motion.section id="colaborative">
         <h2 className="transition-all duration-300 text-white">
           Portifolio Colaborativos
-        </h2> 
+        </h2>
 
         <SliderContainerProjectCard>
           <ProjectCard projectType="colaborative" />
         </SliderContainerProjectCard>
-      </section>
+      </motion.section>
 
-      <section id="jmoranj">
+      <motion.section id="jmoranj">
         <h2 className="transition-all duration-300 text-white">
           Portifólio jmoranj
         </h2>
@@ -23,9 +28,9 @@ export default function PortifolioContainer() {
         <SliderContainerProjectCard>
           <ProjectCard projectType="jmoranj" />
         </SliderContainerProjectCard>
-      </section>
+      </motion.section>
 
-      <section id="eduard0vieira">
+      <motion.section id="eduard0vieira">
         <h2 className="transition-all duration-300 text-white">
           Portifólio eduard0vieira
         </h2>
@@ -33,7 +38,7 @@ export default function PortifolioContainer() {
         <SliderContainerProjectCard>
           <ProjectCard projectType="eduard0vieira" />
         </SliderContainerProjectCard>
-      </section>
-    </div>
-  )
+      </motion.section>
+    </motion.div>
+  );
 }
