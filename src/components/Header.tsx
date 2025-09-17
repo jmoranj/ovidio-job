@@ -7,7 +7,7 @@ export default function Header() {
       initial={{ opacity: 0, y: 300 }}   
       animate={{ opacity: 1, y: 0 }}    
       transition={{ duration: 1.0, ease: "easeOut" }} 
-      className="fixed top-0 left-0 right-0 mx-40 mt-5 z-99 flex items-center justify-between h-16 p-5 bg-white/5 backdrop-blur-md border border-white/20 shadow-xl shadow-black/10 rounded-xl">
+      className="fixed top-0 left-0 right-0 mx-6 md:mx-40 mt-5 z-99 flex items-center justify-between h-16 p-5 bg-white/5 backdrop-blur-md border border-white/20 shadow-xl shadow-black/10 rounded-xl">
       <div className="flex items-center justify-start gap-5">
         <a href="/">
           <ReactIcon className="animate-pulse" />

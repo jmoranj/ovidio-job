@@ -1,6 +1,8 @@
 
 import LoginForm from '@/components/form/LoginForm'
 import { createFileRoute } from '@tanstack/react-router'
+import { motion } from "framer-motion";
+
 
 export const Route = createFileRoute('/login')({
   component: Login,
@@ -9,9 +11,13 @@ export const Route = createFileRoute('/login')({
 function Login() {
   return (
     <div className="flex-1 flex items-center justify-center py-8">
-      <div className="w-full max-w-md">
+      <motion.div 
+      initial={{ opacity: 0, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 5, ease: "easeOut" }} 
+      className="w-full max-w-md">
         <LoginForm />
-      </div>
+      </motion.div>
     </div>
   )
 }
