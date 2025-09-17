@@ -18,9 +18,14 @@ export default defineConfig({
     tailwindcss(),
   ],
   resolve: {
-      alias: {
-        // @ts-ignore
-        '@': path.resolve(__dirname, './src'),
-      },
+    alias: {
+      // @ts-ignore
+      '@': path.resolve(__dirname, './src'),
+    },
   },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
+  base: './',
 })
