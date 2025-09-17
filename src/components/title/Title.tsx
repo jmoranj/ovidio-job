@@ -17,7 +17,7 @@ export default function Title() {
         Olá, <br /> Bem vindo
       </motion.h1>
 
-      <p className='text-white flex flex-col text md:text-5xl text-4xl gap-2'>
+      <p className='text-white flex flex-col text md:text-5xl text-3xl'>
         <motion.span
           initial={{ x: 80 }}
           animate={{ x: 0 }}
